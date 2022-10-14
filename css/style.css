@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 5%;
+    width: 90%;
+    border-bottom: .1rem solid black;
+    
+}
+
+.footer-nav{
+    display: flex;
+    position: fixed;
+    bottom: 0rem;
+    width: 100%;
+    min-height: 44px;
+    background-color: gray;
+}
+
+.footer-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-items-icons{
+    color: black;
+}
