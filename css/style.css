@@ -1,19 +1,58 @@
-.coluna{
+.coluna {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    
 }
 
 .linha {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: stretch;
-    padding: 5%;
-    width: 90%;
-    border-bottom: .1rem solid black;
-    
+}
+
+.remedios{
+    display: flex;
+    height: 7rem;
+    width: 7rem;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.busca{
+    border-style: solid;
+    border-width: 0.10rem;
+    border-color: black;
+    padding: 0.20rem;
+}
+
+.centraliza{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200%;
+}
+
+.espacamento_igual{
+    justify-content: space-evenly;
+}
+
+.espacar{
+    padding: 2rem;
+}
+
+footer{
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    left: 0rem;
+    bottom: 0rem;
+    width: 100%;
+    min-height: 44px;
+    background-color: gray;
 }
 
 .footer-nav{
