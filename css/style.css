@@ -35,6 +35,12 @@
     width: 3.5rem;
 }
 
+.imagem_grande{
+    display: flex;
+    height: 6rem;
+    width: 6rem;
+}
+
 .centraliza{
     display: flex;
     align-self: center;

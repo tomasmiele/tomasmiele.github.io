@@ -8,37 +8,62 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header>
+        <header class="linha">
             <a href="calendario_compartilhado.html">
-                <img src="img/seta_voltar.png" alt="seta voltar" height="30" width="30">
+                <img class="imagem_pequena" src="img/seta_voltar.png" alt="seta voltar">
             </a>
-        </header>
-        <main>
-            <figure>
-                <img src="img/perfil.png" alt="perfil" height="75" width="75">
+            <figure class="espacar">
+                <img class="imagem_grande" src="img/perfil.png" alt="perfil">
             </figure>
-            <h2>
-                Nome: <input type="text"/>
-            </h2>
-            <h2>
-                Idade: <input type="text"/>
-            </h2>
-            <h2>
+            <ul class="coluna centraliza">
+                <li>
+                    Nome: <input type="text"/>
+                </li>
+                <li>
+                    Idade: <input type="text"/>
+                </li>
+            </ul>
+            
+        </header>
+        <main class="coluna espacar">
+            <h2 class="espacar">
                 Medicamento: (+) <input type="text"/>
             </h2>
-            <h2>
+            <h2 class="espacar">
                 Dosagem: <input type="text"/>
             </h2>
-            <h2>
+            <h2 class="espacar">
                 Horário: <input type="text"/>
             </h2>
-            <h2>
+            <h2 class="espacar">
                 Frequencia: <input type="text"/>
             </h2>
-            <h2>
+            <h2 class="espacar">
                 <a href="calendario_compartilhado.html">
                     Concluir
                 </a>
             </h2>
         </main>
+        <footer class="espacamento_igual">
+            <figure>
+                <a href="index.html">
+                    <img class="imagem_media" src="img/busca.png" alt="perfil">
+                </a>
+            </figure>
+            <figure>
+                <a href="calendario_compartilhado.html">
+                    <img class="imagem_media" src="img/calendario.png" alt="perfil">
+                </a>
+            </figure>
+            <figure>
+                <a href="calendario_compartilhado.html">
+                    <img class="imagem_media" src="img/dia_atual.png" alt="perfil">
+                </a>
+            </figure>
+            <figure>
+                <a href="seu_carrinho.html">
+                    <img class="imagem_media" src="img/carrinho.png" alt="perfil">
+                </a>
+            </figure>
+        </footer>
     </body>
