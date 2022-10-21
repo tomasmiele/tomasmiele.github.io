@@ -8,6 +8,11 @@
     flex-direction: row;
 }
 
+.coluna_reversa{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .remedios{
     display: flex;
     height: 7rem;
