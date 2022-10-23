@@ -1,5 +1,26 @@
 body {
     font-family: GentiumPlusRegular, MontserratRegular, sans-serif;
+    background-color: #B5DAE3;
+}
+
+.cinza{
+    color: #CCD0D1;
+}
+
+.azul1{
+    color: #B5DAE3;
+}
+
+.azul2{
+    color: #5ABFD8;
+}
+
+.verde1{
+    color: #9AD9B0;
+}
+
+.verde2{
+    color: #4F9668;
 }
 .coluna {
     display: flex;
@@ -82,7 +103,7 @@ footer{
     bottom: 0rem;
     width: 100%;
     min-height: 44px;
-    background-color: gray;
+    background-color: #B5DAE3;
 }
 
 .remedios_buscados{
