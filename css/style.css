@@ -1,6 +1,7 @@
 body {
     font-family: GentiumPlusRegular, MontserratRegular, sans-serif;
     background-color: #B5DAE3;
+    font-size: large;
 }
 
 .cinza{
@@ -50,6 +51,7 @@ body {
     border-width: 0.10rem;
     border-color: black;
     padding: 0.20rem;
+    font-size: large;
 }
 
 .imagem_pequena{
@@ -104,6 +106,12 @@ footer{
     width: 100%;
     min-height: 44px;
     background-color: #B5DAE3;
+    font-size: small;
+    position: relative;
+}
+
+.fixar_footer{
+    position: fixed;
 }
 
 .remedios_buscados{
@@ -127,4 +135,13 @@ footer{
     text-align: center;
     flex-direction: row;
     justify-content: center;
+    font-size: large;
+}
+
+.remedi{
+    font-size: xx-large;
+}
+
+.texto_pequeno{
+    font-size: small;
 }
