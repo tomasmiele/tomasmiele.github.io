@@ -5,19 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     dosagem = document.querySelector('#dosagem')
     horario = document.querySelector('#horario')
     frequencia = document.querySelector('#frequencia')
-    
     concluir = document.querySelector('input[type="submit"]')
-
-    //localStorage
-
-    localStorage.setItem('nome', nome)
-    localStorage.setItem('idade', idade.value)
-    localStorage.setItem('medicamento', medicamento.value)
-    localStorage.setItem('dosagem', dosagem.value)
-    localStorage.setItem('horario', horario.value)
-    localStorage.setItem('frequencia', frequencia.value)
-
-    //Abilitar botão sumit
 
     function update() {
         if(nome.value == '' || idade.value == '' || medicamento.value =='' || dosagem.value =='' || horario.value =='' || frequencia.value =='') {
@@ -27,22 +15,28 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     nome.addEventListener('input', function() {
+        localStorage.setItem('nome', nome.value)
         update()
     })
 
     idade.addEventListener('input', function() {
+        localStorage.setItem('idade', idade.value)
         update()
     })
     medicamento.addEventListener('input', function() {
+        localStorage.setItem('medicamento', medicamento.value)
         update()
     })
     dosagem.addEventListener('input', function() {
+        localStorage.setItem('dosagem', dosagem.value)
         update()
     })
     horario.addEventListener('input', function() {
+        localStorage.setItem('horario', horario.value)
         update()
     })
     frequencia.addEventListener('input', function() {
+        localStorage.setItem('frequencia', frequencia.value)
         update()
     })
     update()
