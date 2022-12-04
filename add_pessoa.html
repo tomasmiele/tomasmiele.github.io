@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/gentium-plus" type="text/css"/>
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/montserrat" type="text/css"/>
+        <script src="js/add_pessoa.js"></script>
     </head>
     <body>
         <header class="linha">
@@ -19,30 +20,30 @@
             </figure>
             <ul class="coluna centraliza">
                 <li>
-                    Nome: <input type="text"/>
+                    Nome: <input type="text" id="nome"/>
                 </li>
                 <li>
-                    Idade: <input type="text"/>
+                    Idade: <input type="text" id="idade"/>
                 </li>
             </ul>
             
         </header>
         <main class="coluna espacar">
             <h2 class="espacar">
-                Medicamento: (+) <input type="text"/>
+                Medicamento: (+) <input type="text" id="medicamento"/>
             </h2>
             <h2 class="espacar">
-                Dosagem: <input type="text"/>
+                Dosagem: <input type="text" id="dosagem"/>
             </h2>
             <h2 class="espacar">
-                Horário: <input type="text"/>
+                Horário: <input type="text" id="horario"/>
             </h2>
             <h2 class="espacar">
-                Frequencia: <input type="text"/>
+                Frequencia: <input type="text" id="frequencia"/>
             </h2>
             <h2 class="espacar">
-                <a href="calendario_compartilhado.html">
-                    Concluir
+                <a href="perfis.html">
+                    <input type="submit" value="Concluir"/>
                 </a>
             </h2>
         </main>
@@ -69,6 +70,12 @@
                 <a href="seu_carrinho.html">
                     <img class="imagem_media centraliza" src="img/carrinho.png" alt="perfil">
                     <p class="centraliza">Carrinho</p>
+                </a>
+            </figure>
+            <figure>
+                <a href="perfis.html">
+                    <img class="imagem_media centraliza" src="img/add_pessoa.png" alt="perfil">
+                    <p class="centraliza">Perfis</p>
                 </a>
             </figure>
         </footer>

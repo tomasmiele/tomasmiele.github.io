@@ -145,3 +145,7 @@ footer{
 .texto_pequeno{
     font-size: small;
 }
+
+.texto_xgrande{
+    font-size: x-large;
+}
