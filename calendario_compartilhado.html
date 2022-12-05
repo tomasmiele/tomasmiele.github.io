@@ -8,28 +8,24 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/gentium-plus" type="text/css"/>
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/montserrat" type="text/css"/>
+        <script src="js/calendario_compartilhado.js"></script>
     </head>
     <body>
         <header>
             <a href="index.html">
                 <img class="imagem_pequena" src="img/seta_voltar.png" alt="seta voltar">
             </a>
-            <h1 class="espacar_leve">
-                <a class="verde2" href="filtre_dona_ana.html">
-                    FILTRE
-                </a> 
-            </h1>
         </header>
         <main>
             <table>
                 <tr> 
-                    <td> D </td>
-                    <td> S </td>
-                    <td> T </td>
-                    <td> Q </td>
-                    <td> Q </td>
-                    <td> S </td>
-                    <td> S </td>
+                    <td class="dia_calendario"> D </td>
+                    <td class="dia_calendario"> S </td>
+                    <td class="dia_calendario"> T </td>
+                    <td class="dia_calendario"> Q </td>
+                    <td class="dia_calendario"> Q </td>
+                    <td class="dia_calendario"> S </td>
+                    <td class="dia_calendario"> S </td>
                 </tr>
                 <tr> 
                     <td>  </td>
@@ -86,6 +82,11 @@
                     <td>  </td>
                 </tr>
             </table>
+            <h1 class="espacar_leve">
+                <a class="verde2 borda_filtre" href="filtre_dona_ana.html">
+                    Filtro por morador
+                </a> 
+            </h1>
             <h3 class="espacar_leve centraliza verde2">
                 HOJE (__/__/____)
     
@@ -94,7 +95,7 @@
                 7:00
             </h4>
             <ul class="espacar_leve">
-                <li>
+                <li id="dona_ana">
                     Dona Ana
                 </li>
                 <li>

@@ -101,13 +101,19 @@ footer{
     display: flex;
     position: fixed;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     left: 0rem;
     bottom: 0rem;
     width: 100%;
     min-height: 44px;
-    background-color: #B5DAE3;
+    background-color: #CCD0D1;
     font-size: small;
     position: relative;
+    border-top: 0.1rem;
+    border-style: solid;
+    border-color: black;
+    padding: 0.5rem;
 }
 
 .fixar_footer{
@@ -148,4 +154,28 @@ footer{
 
 .texto_xgrande{
     font-size: x-large;
+}
+
+.dia_calendario{
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: black;
+    border-radius: 100px;
+}
+.borda_filtre{
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: black;
+    border-radius: 25px;
+    padding: 0.2rem;
+    margin: 1rem;
+    background-color: #9AD9B0;
+    color: black;
+}
+.borda_medicamentos{
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #4F9668;
+    border-radius: 25px;
+    padding: 0.3rem;
 }
