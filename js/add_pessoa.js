@@ -7,6 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
     frequencia = document.querySelector('#frequencia')
     concluir = document.querySelector('input[type="submit"]')
 
+    aviso = document.createElement('h2')
+    aviso.classList.add('aviso')
+    aviso.innerHTML = 'Em seu estoque não há esse medicamento, você deve comprá-lo'
+    main = document.querySelector('main')
+    h2s = document.querySelectorAll('h2')
+    condicao = true
+
     function update() {
         if(nome.value == '' || idade.value == '' || medicamento.value =='' || dosagem.value =='' || horario.value =='' || frequencia.value =='') {
             concluir.disabled = true
@@ -27,10 +34,16 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('medicamento', medicamento.value)
         update()
         medicamentos = localStorage.getItem('estoque')
-        console.log(medicamentos)
-        if (medicamentos.includes(medicamento) == false){
-                console.log('ok')
-            }
+        if (medicamentos.includes(medicamento.value) == false){
+            if(condicao == true){
+                main.insertBefore(aviso, h2s[1])
+                condicao = false
+            }}
+        else{
+            if (main.contains(aviso) == true){
+                aviso.remove()
+                condicao = true
+            }}
     })
     dosagem.addEventListener('input', function() {
         localStorage.setItem('dosagem', dosagem.value)

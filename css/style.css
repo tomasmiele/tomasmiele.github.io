@@ -109,7 +109,7 @@ footer{
     min-height: 44px;
     background-color: #CCD0D1;
     font-size: small;
-    position: relative;
+    position: sticky;
     border-top: 0.1rem;
     border-style: solid;
     border-color: black;
@@ -178,4 +178,9 @@ footer{
     border-color: #4F9668;
     border-radius: 25px;
     padding: 0.3rem;
+}
+
+.aviso{
+    padding: 0.5rem;
+    color: red;
 }
