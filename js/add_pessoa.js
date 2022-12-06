@@ -26,6 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
     medicamento.addEventListener('input', function() {
         localStorage.setItem('medicamento', medicamento.value)
         update()
+        medicamentos = localStorage.getItem('estoque')
+        console.log(medicamentos)
+        if (medicamentos.includes(medicamento) == false){
+                console.log('ok')
+            }
     })
     dosagem.addEventListener('input', function() {
         localStorage.setItem('dosagem', dosagem.value)

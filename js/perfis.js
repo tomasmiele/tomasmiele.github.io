@@ -9,4 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
         main.insertBefore(novo_h3, add_pessoa)
     }
     NovoElemento()
+
+    d_ana = document.querySelector('#dona_ana')
+    d_ana.addEventListener('click', function(){
+        window.location = "filtre_dona_ana.html"
+    })
 })
