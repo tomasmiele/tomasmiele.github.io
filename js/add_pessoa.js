@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     horario = document.querySelector('#horario')
     frequencia = document.querySelector('#frequencia')
     concluir = document.querySelector('input[type="button"]')
+    bot_concluir = document.querySelector('#botao_concluir')
 
     aviso = document.createElement('h2')
     aviso.classList.add('aviso')
@@ -30,6 +31,13 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('idade', idade.value)
         update()
     })
+
+    bot_concluir.addEventListener('click', function(){
+        if(concluir.disabled == false){
+            window.location.replace("novo_perfil.html")
+        }
+    })
+
     medicamento.addEventListener('input', function() {
         localStorage.setItem('medicamento', medicamento.value)
         update()
