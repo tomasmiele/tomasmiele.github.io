@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     dosagem = document.querySelector('#dosagem')
     horario = document.querySelector('#horario')
     frequencia = document.querySelector('#frequencia')
-    concluir = document.querySelector('input[type="submit"]')
+    concluir = document.querySelector('input[type="button"]')
 
     aviso = document.createElement('h2')
     aviso.classList.add('aviso')
